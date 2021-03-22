@@ -4,7 +4,7 @@ const panels = document.querySelectorAll('.panel') //select all panels 1 to 5 (a
 
 //create a function that removes the active class
 function removeActiveClasses() {
-    panels.forEach((panel) => {
+    panels.forEach((panel) => { //loop through each panel and remove class
         panel.classList.remove('active')
     })
 }
