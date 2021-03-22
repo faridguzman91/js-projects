@@ -1,0 +1,26 @@
+{
+  "name": "nodes",
+  "version": "1.0.0",
+  "description": "packages",
+  "main": "main.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faridguzman91/js-projects.git"
+  },
+  "keywords": [
+    "jssprojects"
+  ],
+  "author": "faridguzman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faridguzman91/js-projects/issues"
+  },
+  "homepage": "https://github.com/faridguzman91/js-projects#readme",
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "three": "^0.126.1"
+  }
+}
