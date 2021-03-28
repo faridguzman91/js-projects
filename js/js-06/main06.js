@@ -5,6 +5,7 @@ window.addEventListener('scroll', checkBoxes)
 checkBoxes()
 
 function checkBoxes() {
+    //calc bottom of page in relation to window height
     const triggerBottom = window.innerHeight / 5 * 4
 
     boxes.forEach(box => {
