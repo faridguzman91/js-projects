@@ -19,7 +19,7 @@ h1 {
 }
 
 .box {
-    background-color: steelblue;
+    background-color: rgb(150, 150, 150);
     color: #fff;
     font-size: 30px;
     display: flex;
@@ -29,13 +29,67 @@ h1 {
     height: 200px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0px 2px 2px 2px rgb(87, 87, 87);
+    box-shadow: 0px 2px 2px 2px rgb(46, 46, 46);
     transform: translateX(200%);
     transition: transform 0.4s ease;
 }
 
+.box img {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .box:nth-of-type(even) {
     transform: translateX(-200%);
+}
+
+.box:nth-of-type(1) {
+    background-image: url(https://w.wallhaven.cc/full/rd/wallhaven-rddgwm.jpg);
+    background-size: cover;
+}
+
+.box:nth-of-type(2) {
+    background-image: url('https://w.wallhaven.cc/full/dp/wallhaven-dpgk5o.jpg');
+    background-size: cover;
+}
+
+.box:nth-of-type(3) {
+    background-image: url('https://w.wallhaven.cc/full/6o/wallhaven-6oqzgq.jpg');
+    background-size: cover;
+}
+
+.box:nth-of-type(4) {
+    background-image: url('https://w.wallhaven.cc/full/rd/wallhaven-rd3pjw.jpg');
+    background-size: ccover;
+}
+
+.box:nth-of-type(5) {
+    background-image: url('https://w.wallhaven.cc/full/vg/wallhaven-vg7lv3.jpg');
+    background-size: cover;
+}
+
+.box:nth-of-type(6) {
+    background-image: url('https://w.wallhaven.cc/full/9m/wallhaven-9mxz8k.jpg');
+    background-size: cover;
+}
+
+.box:nth-of-type(7) {
+    background-image: url('https://w.wallhaven.cc/full/m9/wallhaven-m9q6e9.jpg');
+    background-size: cover;
+}
+
+.box:nth-of-type(8) {
+    background-image: url('https://w.wallhaven.cc/full/e7/wallhaven-e7z65r.jpg');
+    background-size: cover;
+}
+
+.box:nth-of-type(9) {
+    background-image: url('https://w.wallhaven.cc/full/z8/wallhaven-z8mq8y.jpg');
+    background-size: cover;
+}
+
+.box:nth-of-type(10) {
+    background-color: rgb(36, 36, 36);
 }
 
 .box.show {
