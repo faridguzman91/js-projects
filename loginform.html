@@ -8,10 +8,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>KeyCodes</title>
+    <title>Login Form</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/style09.css">
+    <link rel="stylesheet" href="/css/style08.css">
 </head>
 
 <body>
@@ -19,31 +19,24 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div id="insert">
-        <div class="key">
-            a
-            <small>event.key</small>
-
+    <div class="container">
+        <h1>Please login</h1>
+        <div class="form-control">
+            <input type="text" required>
+            <label>Email</label>
         </div>
 
-        <div class="key">
-            65
-            <small>event.keyCode</small>
+        <div class="form-control">
+            <input type="password" required>
+            <label>Password</label>
         </div>
 
-        <div class="key">
-            KeyA
-            <small>event.code</small>
-        </div>
+        <button class="btn">Login</button>
 
-        <div class="key">
-            Press any key to get keyCode
-        </div>
+        <p>Dont have an account? <a href="#">Register</a></p>
     </div>
 
-
-
-    <script src="/js/js-09/main09.js" async defer></script>
+    <script src="/js/js-08/main08.js" async defer></script>
 </body>
 
 </html>
