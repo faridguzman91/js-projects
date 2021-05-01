@@ -1,4 +1,4 @@
 # js-projects
 some quick js projects
 
-extract and open html
+clone/extract and open html
