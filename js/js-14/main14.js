@@ -4,13 +4,39 @@ const API_URL =
     "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=9930b5651b2201e1ff32cbb0da6e1055&page=1";
 //grab image api - insert width=1280
 const IMG_PATH = "https://image.tmdb.org/t/p/w1280";
-//grab search query
-const SEARCH_API =
-    'https://api.themoviedb.org/3/search/movie?api_key=9930b5651b2201e1ff32cbb0da6e1055&query="';
+//grab search query value
+const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=9930b5651b2201e1ff32cbb0da6e1055&query="';
 
 //declare search elements
 const form = document.getElementById("form");
 const search = document.getElementById("search");
+
+
+//send submit - receive data
+
+//doesnt work for now, for some reason... check api docs
+
+/*
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault(); //default prevent autosubmit to page
+    const searchTerm = search.value; //whatever input in search
+
+    //if theres a value and if theres <nothing>
+
+    if (searchTerm && searchTerm !== '') {
+        getMovies(SEARCH_API + searchTerm) //fetch movie info + input value combination
+
+        search.value = '' //search value equals < nothing> string
+
+    } else {
+        window.location.reload();
+    }
+})
+
+*/
+
+//doesnt work for now, for some reason... check api docs
 
 //get init movies
 
@@ -26,7 +52,7 @@ async function getMovies(url) {
 }
 
 function showMovies(movies) {
-    main.innerHTML = "";
+    main.innerHTML = '';
 
     //for each movie item
 
@@ -34,7 +60,7 @@ function showMovies(movies) {
         //for each movie item passed in , function => fetch object from json
 
         //destructure fetched api data (look in devtool console)
-        const { title, poster_path, vote_average, overview } = movie;
+        const { title, poster_path, vote_average, overview } = movie; //{ collect objects from json }
 
         //create a new div
         const movieElement = document.createElement("div");
@@ -47,7 +73,7 @@ function showMovies(movies) {
          <img src="${IMG_PATH + poster_path}" alt="${title}">
           <div class="movie-info">
             <h3>${title}</h3>
-            <span class="${getClassByRate(vote_average)}">${vote_average}</span>
+            <span class="${getClassByRate(vote_average)}">${vote_average}</span> 
           </div>
          <div class="overview">
             <h3>Overzicht</h3>
@@ -72,23 +98,8 @@ function getClassByRate(vote) {
     }
 }
 
-//send submit - receive data
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault(); //default prevent autosubmit to page
 
-    const searchTerm = search.value; //whatever input in search
-
-    //if theres a value and if theres <nothing>
-
-    if (searchTerm && searchTerm != "") {
-        getMovies(SEARCH_API + searchTerm); //fetch movie info + input value combination
-
-        search.value = ""; //search value equals < nothing> string
-    } else {
-        window.location.reload();
-    }
-});
 
 //Event.preventDefault()
 
