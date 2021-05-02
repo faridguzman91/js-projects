@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(78, 101, 237);
+    background-color: rgb(70, 70, 70);
     color: white;
     font-family: 'Lato', sans-serif;
     display: flex;
@@ -14,34 +14,48 @@ body {
     text-align: center;
     overflow: hidden;
     margin-bottom: 40px;
+    border: 1px solid white;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px 2px rgba(31, 31, 31, 0.563);
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
 }
 
 h1 {
     margin: 10px 0 0;
+    text-shadow: rgba(0, 0, 0, 0.583);
 }
 
 h3 {
     font-weight: 400;
     margin: 10px 0;
+    text-shadow: rgba(0, 0, 0, 0.371);
+}
+
+small {
+    text-shadow: rgba(0, 0, 0, 0.371);
 }
 
 .cup {
-    background-color: white;
-    border: 4px solid blue;
-    color: blue;
-    border-radius: 0 0 40px 40px;
+    background-color: rgb(123, 123, 123);
+    border: 2px solid rgb(187, 187, 187);
+    color: rgb(255, 255, 255);
+    border-radius: 5px 5px 40px 40px;
     height: 330px;
     width: 150px;
     margin: 30px 0;
     display: flex;
     overflow: hidden;
     flex-direction: column;
+    box-shadow: 2px 2px 2px 2px rgba(31, 31, 31, 0.563);
 }
 
 .cup.cup-small {
     height: 95px;
-    width: 50px;
-    border-radius: 0 0 15px 15px;
+    width: 60px;
+    border-radius: 5px 5px 15px 15px;
     background-color: rgba(255, 255, 255, 0.9);
     cursor: pointer;
     font-size: 14px;
@@ -50,11 +64,12 @@ h3 {
     text-align: center;
     margin: 5px;
     transition: 0.3s ease;
+    color: black;
 }
 
 .cup.cup-small.full {
-    background-color: #6ab3f8;
-    color: white;
+    background-color: #6b94d3;
+    color: rgb(255, 255, 255);
 }
 
 .cups {
@@ -85,7 +100,7 @@ h3 {
 }
 
 .percentage {
-    background-color: #6ab3f8;
+    background-color: #7a99ff;
     display: flex;
     align-items: center;
     justify-content: center;
