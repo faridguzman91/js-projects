@@ -17,6 +17,8 @@ textArea.addEventListener('keyup', (event) => {
 })
 
 function createTags(input) {
+
+    //split the choices with commas , as an array in input textarea, map then trim array
     const tags = input.split(',').filter(tag => tag.trim() !== '').map(tag => tag.trim()) //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 
 
@@ -44,15 +46,15 @@ function randomSelect() {
     }, 100);
 
     setTimeout(() => {
-        clearInterval(interval)
+            clearInterval(interval)
 
-        setTimeout(() => {
-            const randomTag = pickRandomTag()
+            setTimeout(() => {
+                const randomTag = pickRandomTag()
 
-            highlightTag(randomTag)
-        })
+                highlightTag(randomTag)
+            })
 
-    }, times * 100)
+        }, times * 100) //highlight 30 times before choosing
 }
 
 function pickRandomTag() {
