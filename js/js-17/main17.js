@@ -9,10 +9,10 @@ textArea.addEventListener('keyup', (event) => {
 
     if (event.key === 'Enter') {
         setTimeout(() => {
-            event.target.value = ''
+            event.target.value = '' //remove event value
         }, 10)
 
-        randomSelect()
+        randomSelect() //init function when enter pressed
     }
 })
 
@@ -39,8 +39,8 @@ function randomSelect() {
         highlightTag(randomTag)
 
         setTimeout(() => {
-            unHighlightTag(randomTag)
-        }, 100)
+                unHighlightTag(randomTag)
+            }, 100) //100ms to unhighlight
     }, 100);
 
     setTimeout(() => {
@@ -52,7 +52,7 @@ function randomSelect() {
             highlightTag(randomTag)
         })
 
-    }, 100)
+    }, times * 100)
 }
 
 function pickRandomTag() {
