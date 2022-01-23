@@ -27,8 +27,29 @@ img {
     width: 350px;
 }
 
+.header-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 350px;
+    position: absolute;
+}
+
+button.remove {
+    border: none;
+    background-color: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-header {
-    height: 20opx;
+    height: 200px;
 }
 
 .card-header img {
@@ -40,6 +61,7 @@ img {
 .card-content {
     background-color: #fff;
     padding: 30px;
+    /* width: 100%; */
 }
 
 .card-title {
