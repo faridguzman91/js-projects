@@ -110,6 +110,8 @@ a:hover {
     transition: .2s ease-in-out;
 }
 
+
+/* 
 .repos {
     text-decoration: none;
     color: #fff;
@@ -118,7 +120,7 @@ a:hover {
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
     display: inline-block;
-}
+} */
 
 @media(max-width: 500px) {
     .card {
