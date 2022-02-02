@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Source+Code+Pro:ital,wght@0,500;1,500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(6, 6, 6);
+    background-color: rgb(19, 19, 19);
+    background-size: cover;
+    font-family: 'Source Code Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+.square {
+    background-color: #1d1d1d;
+    box-shadow: 0 0 2px #000;
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+    transition: 2s ease;
+}
+
+.square:hover {
+    transition-duration: 0s;
+}
